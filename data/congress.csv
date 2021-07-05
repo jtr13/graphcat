@@ -1,1 +1,536 @@
-
+full_name,gender,type,party,birthday,yrs,age
+Sherrod Brown,M,Senate,Dem,1952-11-09,68,60s
+Maria Cantwell,F,Senate,Dem,1958-10-13,62,60s
+Benjamin L. Cardin,M,Senate,Dem,1943-10-05,77,70s
+Thomas R. Carper,M,Senate,Dem,1947-01-23,74,70s
+"Robert P. Casey, Jr.",M,Senate,Dem,1960-04-13,61,60s
+Dianne Feinstein,F,Senate,Dem,1933-06-22,88,80s
+Amy Klobuchar,F,Senate,Dem,1960-05-25,61,60s
+Robert Menendez,M,Senate,Dem,1954-01-01,67,60s
+Debbie Stabenow,F,Senate,Dem,1950-04-29,71,70s
+Jon Tester,M,Senate,Dem,1956-08-21,64,60s
+Sheldon Whitehouse,M,Senate,Dem,1955-10-20,65,60s
+John Barrasso,M,Senate,Rep,1952-07-21,68,60s
+Roger F. Wicker,M,Senate,Rep,1951-07-05,70,70s
+Susan M. Collins,F,Senate,Rep,1952-12-07,68,60s
+John Cornyn,M,Senate,Rep,1952-02-02,69,60s
+Richard J. Durbin,M,Senate,Dem,1944-11-21,76,70s
+Lindsey Graham,M,Senate,Rep,1955-07-09,65,60s
+James M. Inhofe,M,Senate,Rep,1934-11-17,86,80s
+Mitch McConnell,M,Senate,Rep,1942-02-20,79,70s
+Jeff Merkley,M,Senate,Dem,1956-10-24,64,60s
+Jack Reed,M,Senate,Dem,1949-11-12,71,70s
+James E. Risch,M,Senate,Rep,1943-05-03,78,70s
+Jeanne Shaheen,F,Senate,Dem,1947-01-28,74,70s
+Mark R. Warner,M,Senate,Dem,1954-12-15,66,60s
+Kirsten E. Gillibrand,F,Senate,Dem,1966-12-09,54,50s
+Christopher A. Coons,M,Senate,Dem,1963-09-09,57,50s
+"Joe Manchin, III",M,Senate,Dem,1947-08-24,73,70s
+Robert B. Aderholt,M,House,Rep,1965-07-22,55,50s
+Tammy Baldwin,F,Senate,Dem,1962-02-11,59,50s
+Karen Bass,F,House,Dem,1953-10-03,67,60s
+Michael F. Bennet,M,Senate,Dem,1964-11-28,56,50s
+Gus M. Bilirakis,M,House,Rep,1963-02-08,58,50s
+"Sanford D. Bishop, Jr.",M,House,Dem,1947-02-04,74,70s
+Marsha Blackburn,F,Senate,Rep,1952-06-06,69,60s
+Earl Blumenauer,M,House,Dem,1948-08-16,72,70s
+Richard Blumenthal,M,Senate,Dem,1946-02-13,75,70s
+Roy Blunt,M,Senate,Rep,1950-01-10,71,70s
+John Boozman,M,Senate,Rep,1950-12-10,70,70s
+Kevin Brady,M,House,Rep,1955-04-11,66,60s
+Mo Brooks,M,House,Rep,1954-04-29,67,60s
+Vern Buchanan,M,House,Rep,1951-05-08,70,70s
+Larry Bucshon,M,House,Rep,1962-05-31,59,50s
+Michael C. Burgess,M,House,Rep,1950-12-23,70,70s
+Richard Burr,M,Senate,Rep,1955-11-30,65,60s
+G. K. Butterfield,M,House,Dem,1947-04-27,74,70s
+Ken Calvert,M,House,Rep,1953-06-08,68,60s
+Shelley Moore Capito,F,Senate,Rep,1953-11-26,67,60s
+André Carson,M,House,Dem,1974-10-16,46,40s
+John R. Carter,M,House,Rep,1941-11-06,79,70s
+Bill Cassidy,M,Senate,Rep,1957-09-28,63,60s
+Kathy Castor,F,House,Dem,1966-08-20,54,50s
+Steve Chabot,M,House,Rep,1953-01-22,68,60s
+Judy Chu,F,House,Dem,1953-07-07,67,60s
+David N. Cicilline,M,House,Dem,1961-07-15,59,50s
+Yvette D. Clarke,F,House,Dem,1964-11-21,56,50s
+Emanuel Cleaver,M,House,Dem,1944-10-26,76,70s
+James E. Clyburn,M,House,Dem,1940-07-21,80,80s
+Steve Cohen,M,House,Dem,1949-05-24,72,70s
+Tom Cole,M,House,Rep,1949-04-28,72,70s
+Gerald E. Connolly,M,House,Dem,1950-03-30,71,70s
+Jim Cooper,M,House,Dem,1954-06-19,67,60s
+Jim Costa,M,House,Dem,1952-04-13,69,60s
+Joe Courtney,M,House,Dem,1953-04-06,68,60s
+Mike Crapo,M,Senate,Rep,1951-05-20,70,70s
+"Eric A. ""Rick"" Crawford",M,House,Rep,1966-01-22,55,50s
+Henry Cuellar,M,House,Dem,1955-09-19,65,60s
+Danny K. Davis,M,House,Dem,1941-09-06,79,70s
+Peter A. DeFazio,M,House,Dem,1947-05-27,74,70s
+Diana DeGette,F,House,Dem,1957-07-29,63,60s
+Rosa L. DeLauro,F,House,Dem,1943-03-02,78,70s
+Scott DesJarlais,M,House,Rep,1964-02-21,57,50s
+Theodore E. Deutch,M,House,Dem,1966-05-07,55,50s
+Mario Diaz-Balart,M,House,Rep,1961-09-25,59,50s
+Lloyd Doggett,M,House,Dem,1946-10-06,74,70s
+Michael F. Doyle,M,House,Dem,1953-08-05,67,60s
+Jeff Duncan,M,House,Rep,1966-01-07,55,50s
+Anna G. Eshoo,F,House,Dem,1942-12-13,78,70s
+"Charles J. ""Chuck"" Fleischmann",M,House,Rep,1962-10-11,58,50s
+Jeff Fortenberry,M,House,Rep,1960-12-27,60,60s
+Virginia Foxx,F,House,Rep,1943-06-29,78,70s
+John Garamendi,M,House,Dem,1945-01-24,76,70s
+Bob Gibbs,M,House,Rep,1954-06-14,67,60s
+Louie Gohmert,M,House,Rep,1953-08-18,67,60s
+Paul A. Gosar,M,House,Rep,1958-11-22,62,60s
+Kay Granger,F,House,Rep,1943-01-18,78,70s
+Chuck Grassley,M,Senate,Rep,1933-09-17,87,80s
+Sam Graves,M,House,Rep,1963-11-07,57,50s
+Al Green,M,House,Dem,1947-09-01,73,70s
+H. Morgan Griffith,M,House,Rep,1958-03-15,63,60s
+Raúl M. Grijalva,M,House,Dem,1948-02-19,73,70s
+Brett Guthrie,M,House,Rep,1964-02-18,57,50s
+Andy Harris,M,House,Rep,1957-01-25,64,60s
+Vicky Hartzler,F,House,Rep,1960-10-13,60,60s
+Martin Heinrich,M,Senate,Dem,1971-10-17,49,40s
+Jaime Herrera Beutler,F,House,Rep,1978-11-03,42,40s
+Brian Higgins,M,House,Dem,1959-10-06,61,60s
+James A. Himes,M,House,Dem,1966-07-05,55,50s
+Mazie K. Hirono,F,Senate,Dem,1947-11-03,73,70s
+John Hoeven,M,Senate,Rep,1957-03-13,64,60s
+Steny H. Hoyer,M,House,Dem,1939-06-14,82,80s
+Bill Huizenga,M,House,Rep,1969-01-31,52,50s
+Sheila Jackson Lee,F,House,Dem,1950-01-12,71,70s
+Bill Johnson,M,House,Rep,1954-11-10,66,60s
+Eddie Bernice Johnson,F,House,Dem,1935-12-03,85,80s
+"Henry C. ""Hank"" Johnson, Jr.",M,House,Dem,1954-10-02,66,60s
+Ron Johnson,M,Senate,Rep,1955-04-08,66,60s
+Jim Jordan,M,House,Rep,1964-02-17,57,50s
+Marcy Kaptur,F,House,Dem,1946-06-17,75,70s
+William R. Keating,M,House,Dem,1952-09-06,68,60s
+Mike Kelly,M,House,Rep,1948-05-10,73,70s
+Ron Kind,M,House,Dem,1963-03-16,58,50s
+Adam Kinzinger,M,House,Rep,1978-02-27,43,40s
+Doug Lamborn,M,House,Rep,1954-05-24,67,60s
+James R. Langevin,M,House,Dem,1964-04-22,57,50s
+James Lankford,M,Senate,Rep,1968-03-04,53,50s
+Rick Larsen,M,House,Dem,1965-06-15,56,50s
+John B. Larson,M,House,Dem,1948-07-22,72,70s
+Robert E. Latta,M,House,Rep,1956-04-18,65,60s
+Patrick J. Leahy,M,Senate,Dem,1940-03-31,81,80s
+Barbara Lee,F,House,Dem,1946-07-16,74,70s
+Mike Lee,M,Senate,Rep,1971-06-04,50,50s
+Zoe Lofgren,F,House,Dem,1947-12-21,73,70s
+Billy Long,M,House,Rep,1955-08-11,65,60s
+Frank D. Lucas,M,House,Rep,1960-01-06,61,60s
+Blaine Luetkemeyer,M,House,Rep,1952-05-07,69,60s
+Ben Ray Luján,M,Senate,Dem,1972-06-07,49,40s
+Stephen F. Lynch,M,House,Dem,1955-03-31,66,60s
+Carolyn B. Maloney,F,House,Dem,1946-02-19,75,70s
+Edward J. Markey,M,Senate,Dem,1946-07-11,74,70s
+Doris O. Matsui,F,House,Dem,1944-09-25,76,70s
+Kevin McCarthy,M,House,Rep,1965-01-26,56,50s
+Michael T. McCaul,M,House,Rep,1962-01-14,59,50s
+Tom McClintock,M,House,Rep,1956-07-10,64,60s
+Betty McCollum,F,House,Dem,1954-07-12,66,60s
+James P. McGovern,M,House,Dem,1959-11-20,61,60s
+Patrick T. McHenry,M,House,Rep,1975-10-22,45,40s
+David B. McKinley,M,House,Rep,1947-03-28,74,70s
+Cathy McMorris Rodgers,F,House,Rep,1969-05-22,52,50s
+Jerry McNerney,M,House,Dem,1951-06-18,70,70s
+Gregory W. Meeks,M,House,Dem,1953-09-25,67,60s
+Gwen Moore,F,House,Dem,1951-04-18,70,70s
+Jerry Moran,M,Senate,Rep,1954-05-29,67,60s
+Lisa Murkowski,F,Senate,Rep,1957-05-22,64,60s
+Christopher Murphy,M,Senate,Dem,1973-08-03,47,40s
+Patty Murray,F,Senate,Dem,1950-10-11,70,70s
+Jerrold Nadler,M,House,Dem,1947-06-13,74,70s
+Grace F. Napolitano,F,House,Dem,1936-12-04,84,80s
+Richard E. Neal,M,House,Dem,1949-02-14,72,70s
+Eleanor Holmes Norton,F,House,Dem,1937-06-13,84,80s
+Devin Nunes,M,House,Rep,1973-10-01,47,40s
+Steven M. Palazzo,M,House,Rep,1970-02-21,51,50s
+"Frank Pallone, Jr.",M,House,Dem,1951-10-30,69,60s
+"Bill Pascrell, Jr.",M,House,Dem,1937-01-25,84,80s
+Rand Paul,M,Senate,Rep,1963-01-07,58,50s
+Nancy Pelosi,F,House,Dem,1940-03-26,81,80s
+Ed Perlmutter,M,House,Dem,1953-05-01,68,60s
+Gary C. Peters,M,Senate,Dem,1958-12-01,62,60s
+Chellie Pingree,F,House,Dem,1955-04-02,66,60s
+Rob Portman,M,Senate,Rep,1955-12-19,65,60s
+Bill Posey,M,House,Rep,1947-12-18,73,70s
+David E. Price,M,House,Dem,1940-08-17,80,80s
+Mike Quigley,M,House,Dem,1958-10-17,62,60s
+Tom Reed,M,House,Rep,1971-11-18,49,40s
+Harold Rogers,M,House,Rep,1937-12-31,83,80s
+Mike Rogers,M,House,Rep,1958-07-16,62,60s
+Lucille Roybal-Allard,F,House,Dem,1941-06-12,80,80s
+Marco Rubio,M,Senate,Rep,1971-05-28,50,50s
+C. A. Dutch Ruppersberger,M,House,Dem,1946-01-31,75,70s
+Bobby L. Rush,M,House,Dem,1946-11-23,74,70s
+Tim Ryan,M,House,Dem,1973-07-16,47,40s
+Gregorio Kilili Camacho Sablan,M,House,Dem,1955-01-19,66,60s
+John P. Sarbanes,M,House,Dem,1962-05-22,59,50s
+Steve Scalise,M,House,Rep,1965-10-06,55,50s
+Janice D. Schakowsky,F,House,Dem,1944-05-26,77,70s
+Adam B. Schiff,M,House,Dem,1960-06-22,61,60s
+Kurt Schrader,M,House,Dem,1951-10-19,69,60s
+Charles E. Schumer,M,Senate,Dem,1950-11-23,70,70s
+David Schweikert,M,House,Rep,1962-03-03,59,50s
+Austin Scott,M,House,Rep,1969-12-10,51,50s
+David Scott,M,House,Dem,1945-06-27,76,70s
+"Robert C. ""Bobby"" Scott",M,House,Dem,1947-04-30,74,70s
+Tim Scott,M,Senate,Rep,1965-09-19,55,50s
+Terri Sewell,F,House,Dem,1965-01-01,56,50s
+Richard C. Shelby,M,Senate,Rep,1934-05-06,87,80s
+Brad Sherman,M,House,Dem,1954-10-24,66,60s
+Michael K. Simpson,M,House,Rep,1950-09-08,70,70s
+Albio Sires,M,House,Dem,1951-01-26,70,70s
+Adam Smith,M,House,Dem,1965-06-15,56,50s
+Adrian Smith,M,House,Rep,1970-12-19,50,50s
+Christopher H. Smith,M,House,Rep,1953-03-04,68,60s
+Jackie Speier,F,House,Dem,1950-05-14,71,70s
+Linda T. Sánchez,F,House,Dem,1969-01-28,52,50s
+Bennie G. Thompson,M,House,Dem,1948-01-28,73,70s
+Mike Thompson,M,House,Dem,1951-01-24,70,70s
+Glenn Thompson,M,House,Rep,1959-07-27,61,60s
+John Thune,M,Senate,Rep,1961-01-07,60,60s
+Paul Tonko,M,House,Dem,1949-06-18,72,70s
+Patrick J. Toomey,M,Senate,Rep,1961-11-17,59,50s
+Michael R. Turner,M,House,Rep,1960-01-11,61,60s
+Fred Upton,M,House,Rep,1953-04-23,68,60s
+Chris Van Hollen,M,Senate,Dem,1959-01-10,62,60s
+Nydia M. Velázquez,F,House,Dem,1953-03-28,68,60s
+Tim Walberg,M,House,Rep,1951-04-12,70,70s
+Debbie Wasserman Schultz,F,House,Dem,1966-09-27,54,50s
+Maxine Waters,F,House,Dem,1938-08-15,82,80s
+Daniel Webster,M,House,Rep,1949-04-27,72,70s
+Peter Welch,M,House,Dem,1947-05-02,74,70s
+Joe Wilson,M,House,Rep,1947-07-31,73,70s
+Frederica S. Wilson,F,House,Dem,1942-11-05,78,70s
+Robert J. Wittman,M,House,Rep,1959-02-03,62,60s
+Steve Womack,M,House,Rep,1957-02-18,64,60s
+Ron Wyden,M,Senate,Dem,1949-05-03,72,70s
+John A. Yarmuth,M,House,Dem,1947-11-04,73,70s
+Don Young,M,House,Rep,1933-06-09,88,80s
+Todd Young,M,Senate,Rep,1972-08-24,48,40s
+Mark E. Amodei,M,House,Rep,1958-06-12,63,60s
+Suzanne Bonamici,F,House,Dem,1954-10-14,66,60s
+Suzan K. DelBene,F,House,Dem,1962-02-17,59,50s
+Thomas Massie,M,House,Rep,1971-01-13,50,50s
+"Donald M. Payne, Jr.",M,House,Dem,1958-12-17,62,60s
+Brian Schatz,M,Senate,Dem,1972-10-20,48,40s
+Bill Foster,M,House,Dem,1955-10-07,65,60s
+Dina Titus,F,House,Dem,1950-05-23,71,70s
+Tom Cotton,M,Senate,Rep,1977-05-13,44,40s
+Kyrsten Sinema,F,Senate,Dem,1976-07-12,44,40s
+Doug LaMalfa,M,House,Rep,1960-07-02,61,60s
+Jared Huffman,M,House,Dem,1964-02-18,57,50s
+Ami Bera,M,House,Dem,1965-03-02,56,50s
+Eric Swalwell,M,House,Dem,1980-11-16,40,40s
+Julia Brownley,F,House,Dem,1952-08-28,68,60s
+Tony Cárdenas,M,House,Dem,1963-03-31,58,50s
+Raul Ruiz,M,House,Dem,1972-08-25,48,40s
+Mark Takano,M,House,Dem,1960-12-10,60,60s
+Alan S. Lowenthal,M,House,Dem,1941-03-08,80,80s
+Juan Vargas,M,House,Dem,1961-03-07,60,60s
+Scott H. Peters,M,House,Dem,1958-06-17,63,60s
+Lois Frankel,F,House,Dem,1948-05-16,73,70s
+Tammy Duckworth,F,Senate,Dem,1968-03-12,53,50s
+Rodney Davis,M,House,Rep,1970-01-05,51,50s
+Cheri Bustos,F,House,Dem,1961-10-17,59,50s
+Jackie Walorski,F,House,Rep,1963-08-17,57,50s
+Andy Barr,M,House,Rep,1973-07-24,47,40s
+Elizabeth Warren,F,Senate,Dem,1949-06-22,72,70s
+Daniel T. Kildee,M,House,Dem,1958-08-11,62,60s
+Ann Wagner,F,House,Rep,1962-09-13,58,50s
+Steve Daines,M,Senate,Rep,1962-08-20,58,50s
+Richard Hudson,M,House,Rep,1971-11-04,49,40s
+Kevin Cramer,M,Senate,Rep,1961-01-21,60,60s
+Deb Fischer,F,Senate,Rep,1951-03-01,70,70s
+Ann Kuster,F,House,Dem,1956-09-05,64,60s
+Grace Meng,F,House,Dem,1975-10-01,45,40s
+Hakeem S. Jeffries,M,House,Dem,1970-08-04,50,50s
+Sean Patrick Maloney,M,House,Dem,1966-07-30,54,50s
+Brad R. Wenstrup,M,House,Rep,1958-06-17,63,60s
+Joyce Beatty,F,House,Dem,1950-03-12,71,70s
+David P. Joyce,M,House,Rep,1957-03-17,64,60s
+Markwayne Mullin,M,House,Rep,1977-07-26,43,40s
+Scott Perry,M,House,Rep,1962-05-27,59,50s
+Matt Cartwright,M,House,Dem,1961-05-01,60,60s
+Tom Rice,M,House,Rep,1957-08-04,63,60s
+Ted Cruz,M,Senate,Rep,1970-12-22,50,50s
+"Randy K. Weber, Sr.",M,House,Rep,1953-07-02,68,60s
+Joaquin Castro,M,House,Dem,1974-09-16,46,40s
+Roger Williams,M,House,Rep,1949-09-13,71,70s
+Marc A. Veasey,M,House,Dem,1971-01-03,50,50s
+Filemon Vela,M,House,Dem,1963-02-13,58,50s
+Chris Stewart,M,House,Rep,1960-07-15,60,60s
+Tim Kaine,M,Senate,Dem,1958-02-26,63,60s
+Derek Kilmer,M,House,Dem,1974-01-01,47,40s
+Mark Pocan,M,House,Dem,1964-08-14,56,50s
+Robin L. Kelly,F,House,Dem,1956-04-30,65,60s
+Jason Smith,M,House,Rep,1980-06-16,41,40s
+Cory A. Booker,M,Senate,Dem,1969-04-27,52,50s
+Katherine M. Clark,F,House,Dem,1963-07-17,57,50s
+Donald Norcross,M,House,Dem,1958-12-13,62,60s
+Alma S. Adams,F,House,Dem,1946-05-27,75,70s
+Gary J. Palmer,M,House,Rep,1954-05-14,67,60s
+J. Hill,M,House,Rep,1956-12-05,64,60s
+Bruce Westerman,M,House,Rep,1967-11-18,53,50s
+Ruben Gallego,M,House,Dem,1979-11-20,41,40s
+Mark DeSaulnier,M,House,Dem,1952-03-31,69,60s
+Pete Aguilar,M,House,Dem,1979-06-19,42,40s
+Ted Lieu,M,House,Dem,1969-03-29,52,50s
+Norma J. Torres,F,House,Dem,1965-04-04,56,50s
+Ken Buck,M,House,Rep,1959-02-16,62,60s
+"Earl L. ""Buddy"" Carter",M,House,Rep,1957-09-06,63,60s
+Jody B. Hice,M,House,Rep,1960-04-22,61,60s
+Barry Loudermilk,M,House,Rep,1963-12-22,57,50s
+Rick W. Allen,M,House,Rep,1951-11-07,69,60s
+Mike Bost,M,House,Rep,1960-12-30,60,60s
+Garret Graves,M,House,Rep,1972-01-31,49,40s
+Seth Moulton,M,House,Dem,1978-10-24,42,40s
+John R. Moolenaar,M,House,Rep,1961-05-08,60,60s
+Debbie Dingell,F,House,Dem,1953-11-23,67,60s
+Brenda L. Lawrence,F,House,Dem,1954-10-18,66,60s
+Tom Emmer,M,House,Rep,1961-03-03,60,60s
+David Rouzer,M,House,Rep,1972-02-16,49,40s
+Bonnie Watson Coleman,F,House,Dem,1945-02-06,76,70s
+Lee M. Zeldin,M,House,Rep,1980-01-30,41,40s
+Kathleen M. Rice,F,House,Dem,1965-02-15,56,50s
+Elise M. Stefanik,F,House,Rep,1984-07-02,37,30s
+John Katko,M,House,Rep,1962-11-09,58,50s
+Brendan F. Boyle,M,House,Dem,1977-02-06,44,40s
+Brian Babin,M,House,Rep,1948-03-23,73,70s
+"Donald S. Beyer, Jr.",M,House,Dem,1950-06-20,71,70s
+Stacey E. Plaskett,F,House,Dem,1966-05-13,55,50s
+Dan Newhouse,M,House,Rep,1955-07-10,65,60s
+Glenn Grothman,M,House,Rep,1955-07-03,66,60s
+Alexander Mooney,M,House,Rep,1971-06-05,50,50s
+Aumua Amata Coleman Radewagen,F,House,Rep,1947-12-29,73,70s
+Dan Sullivan,M,Senate,Rep,1964-11-13,56,50s
+Joni Ernst,F,Senate,Rep,1970-07-01,51,50s
+Thom Tillis,M,Senate,Rep,1960-08-30,60,60s
+Mike Rounds,M,Senate,Rep,1954-10-24,66,60s
+Ben Sasse,M,Senate,Rep,1972-02-22,49,40s
+Trent Kelly,M,House,Rep,1966-03-01,55,50s
+Darin LaHood,M,House,Rep,1968-07-05,52,50s
+Warren Davidson,M,House,Rep,1970-03-01,51,50s
+James Comer,M,House,Rep,1972-08-19,48,40s
+Dwight Evans,M,House,Dem,1954-05-16,67,60s
+John Kennedy,M,Senate,Rep,1951-11-21,69,60s
+Margaret Wood Hassan,F,Senate,Dem,1958-02-27,63,60s
+Catherine Cortez Masto,F,Senate,Dem,1964-03-29,57,50s
+Bradley Scott Schneider,M,House,Dem,1961-08-20,59,50s
+Tom O’Halleran,M,House,Dem,1946-01-24,75,70s
+Andy Biggs,M,House,Rep,1958-11-07,62,60s
+Ro Khanna,M,House,Dem,1976-09-13,44,40s
+Jimmy Panetta,M,House,Dem,1969-10-01,51,50s
+Salud O. Carbajal,M,House,Dem,1964-11-18,56,50s
+Nanette Diaz Barragán,F,House,Dem,1976-09-15,44,40s
+J. Luis Correa,M,House,Dem,1958-01-24,63,60s
+Lisa Blunt Rochester,F,House,Dem,1962-02-10,59,50s
+Matt Gaetz,M,House,Rep,1982-05-07,39,30s
+Neal P. Dunn,M,House,Rep,1953-02-16,68,60s
+John H. Rutherford,M,House,Rep,1952-09-02,68,60s
+"Al Lawson, Jr.",M,House,Dem,1948-09-23,72,70s
+Stephanie N. Murphy,F,House,Dem,1978-09-16,42,40s
+Darren Soto,M,House,Dem,1978-02-25,43,40s
+Val Butler Demings,F,House,Dem,1957-03-12,64,60s
+Charlie Crist,M,House,Dem,1956-07-24,64,60s
+Brian J. Mast,M,House,Rep,1980-07-10,40,40s
+A. Drew Ferguson IV,M,House,Rep,1966-11-15,54,50s
+Raja Krishnamoorthi,M,House,Dem,1973-07-19,47,40s
+Jim Banks,M,House,Rep,1979-07-16,41,40s
+Trey Hollingsworth,M,House,Rep,1983-09-12,37,30s
+Roger Marshall,M,Senate,Rep,1960-08-09,60,60s
+Clay Higgins,M,House,Rep,1961-08-24,59,50s
+Mike Johnson,M,House,Rep,1972-01-30,49,40s
+Anthony Brown,M,House,Dem,1961-11-21,59,50s
+Jamie Raskin,M,House,Dem,1962-12-13,58,50s
+Jack Bergman,M,House,Rep,1947-02-02,74,70s
+Ted Budd,M,House,Rep,1971-10-21,49,40s
+Don Bacon,M,House,Rep,1963-08-16,57,50s
+Josh Gottheimer,M,House,Dem,1975-03-08,46,40s
+Jacky Rosen,F,Senate,Dem,1957-08-02,63,60s
+Thomas R. Suozzi,M,House,Dem,1962-08-31,58,50s
+Adriano Espaillat,M,House,Dem,1954-09-27,66,60s
+Brian K. Fitzpatrick,M,House,Rep,1973-12-17,47,40s
+Lloyd Smucker,M,House,Rep,1964-01-23,57,50s
+Jenniffer González-Colón,F,House,Rep,1976-08-05,44,40s
+David Kustoff,M,House,Rep,1966-10-08,54,50s
+Vicente Gonzalez,M,House,Dem,1967-09-04,53,50s
+Jodey C. Arrington,M,House,Rep,1972-03-09,49,40s
+A. Donald McEachin,M,House,Dem,1961-10-10,59,50s
+Pramila Jayapal,F,House,Dem,1965-09-21,55,50s
+Mike Gallagher,M,House,Rep,1984-03-03,37,30s
+Liz Cheney,F,House,Rep,1966-07-28,54,50s
+Ron Estes,M,House,Rep,1956-07-19,64,60s
+Ralph Norman,M,House,Rep,1953-06-20,68,60s
+Jimmy Gomez,M,House,Dem,1974-11-25,46,40s
+John R. Curtis,M,House,Rep,1960-05-10,61,60s
+Tina Smith,F,Senate,Dem,1958-03-04,63,60s
+Cindy Hyde-Smith,F,Senate,Rep,1959-05-10,62,60s
+Conor Lamb,M,House,Dem,1984-06-27,37,30s
+Debbie Lesko,F,House,Rep,1958-11-14,62,60s
+Michael Cloud,M,House,Rep,1975-05-13,46,40s
+Troy Balderson,M,House,Rep,1962-01-16,59,50s
+Kevin Hern,M,House,Rep,1961-12-04,59,50s
+Joseph D. Morelle,M,House,Dem,1957-04-29,64,60s
+Mary Gay Scanlon,F,House,Dem,1959-08-30,61,60s
+Susan Wild,F,House,Dem,1957-06-07,64,60s
+Ed Case,M,House,Dem,1952-09-27,68,60s
+Steven Horsford,M,House,Dem,1973-04-29,48,40s
+Ann Kirkpatrick,F,House,Dem,1950-03-24,71,70s
+Greg Stanton,M,House,Dem,1970-03-08,51,50s
+Josh Harder,M,House,Dem,1986-08-01,34,30s
+Katie Porter,F,House,Dem,1974-01-03,47,40s
+Mike Levin,M,House,Dem,1978-10-28,42,40s
+Joe Neguse,M,House,Dem,1984-05-13,37,30s
+Jason Crow,M,House,Dem,1979-03-15,42,40s
+Jahana Hayes,F,House,Dem,1973-03-08,48,40s
+Michael Waltz,M,House,Rep,1974-01-31,47,40s
+W. Gregory Steube,M,House,Rep,1978-05-19,43,40s
+Lucy McBath,F,House,Dem,1960-06-01,61,60s
+Michael F. Q. San Nicolas,M,House,Dem,1981-01-30,40,40s
+Cynthia Axne,F,House,Dem,1965-04-20,56,50s
+Russ Fulcher,M,House,Rep,1973-07-19,47,40s
+"Jesús G. ""Chuy"" García",M,House,Dem,1956-04-12,65,60s
+Sean Casten,M,House,Dem,1971-11-23,49,40s
+Lauren Underwood,F,House,Dem,1986-10-04,34,30s
+James R. Baird,M,House,Rep,1945-06-04,76,70s
+Greg Pence,M,House,Rep,1956-11-14,64,60s
+Sharice Davids,F,House,Dem,1980-05-22,41,40s
+Lori Trahan,F,House,Dem,1973-10-27,47,40s
+Ayanna Pressley,F,House,Dem,1974-02-03,47,40s
+David J. Trone,M,House,Dem,1955-09-21,65,60s
+Elissa Slotkin,F,House,Dem,1976-07-10,44,40s
+Andy Levin,M,House,Dem,1960-08-01,60,60s
+Haley M. Stevens,F,House,Dem,1983-06-24,38,30s
+Rashida Tlaib,F,House,Dem,1976-07-24,44,40s
+Jim Hagedorn,M,House,Rep,1962-08-04,58,50s
+Angie Craig,F,House,Dem,1972-02-14,49,40s
+Dean Phillips,M,House,Dem,1969-01-20,52,50s
+Ilhan Omar,F,House,Dem,1981-10-04,39,30s
+Pete Stauber,M,House,Rep,1966-05-10,55,50s
+Michael Guest,M,House,Rep,1970-02-04,51,50s
+Kelly Armstrong,M,House,Rep,1976-10-08,44,40s
+Chris Pappas,M,House,Dem,1980-06-04,41,40s
+Jefferson Van Drew,M,House,Rep,1953-02-23,68,60s
+Andy Kim,M,House,Dem,1982-07-12,38,30s
+Tom Malinowski,M,House,Dem,1965-09-23,55,50s
+Mikie Sherrill,F,House,Dem,1972-01-19,49,40s
+Susie Lee,F,House,Dem,1966-11-07,54,50s
+Alexandria Ocasio-Cortez,F,House,Dem,1989-10-13,31,30s
+Antonio Delgado,M,House,Dem,1977-01-19,44,40s
+Anthony Gonzalez,M,House,Rep,1984-09-19,36,30s
+Madeleine Dean,F,House,Dem,1959-06-06,62,60s
+Chrissy Houlahan,F,House,Dem,1967-06-05,54,50s
+Daniel Meuser,M,House,Rep,1964-02-10,57,50s
+John Joyce,M,House,Rep,1957-02-08,64,60s
+Guy Reschenthaler,M,House,Rep,1983-04-17,38,30s
+William R. Timmons IV,M,House,Rep,1984-04-30,37,30s
+Dusty Johnson,M,House,Rep,1976-09-30,44,40s
+Tim Burchett,M,House,Rep,1964-08-25,56,50s
+John Rose,M,House,Rep,1965-02-23,56,50s
+Mark E. Green,M,House,Rep,1964-11-08,56,50s
+Dan Crenshaw,M,House,Rep,1984-03-14,37,30s
+Van Taylor,M,House,Rep,1972-08-01,48,40s
+Lance Gooden,M,House,Rep,1982-12-01,38,30s
+Lizzie Fletcher,F,House,Dem,1975-02-13,46,40s
+Veronica Escobar,F,House,Dem,1969-09-15,51,50s
+Chip Roy,M,House,Rep,1972-08-07,48,40s
+Sylvia R. Garcia,F,House,Dem,1950-09-06,70,70s
+Colin Z. Allred,M,House,Dem,1983-04-15,38,30s
+Elaine G. Luria,F,House,Dem,1975-08-15,45,40s
+Ben Cline,M,House,Rep,1972-02-29,49,40s
+Abigail Davis Spanberger,F,House,Dem,1979-08-07,41,40s
+Jennifer Wexton,F,House,Dem,1968-05-27,53,50s
+Kim Schrier,F,House,Dem,1968-08-23,52,50s
+Bryan Steil,M,House,Rep,1981-03-30,40,40s
+Carol D. Miller,F,House,Rep,1950-11-04,70,70s
+Rick Scott,M,Senate,Rep,1952-12-01,68,60s
+Mike Braun,M,Senate,Rep,1954-03-24,67,60s
+Josh Hawley,M,Senate,Rep,1979-12-31,41,40s
+Mitt Romney,M,Senate,Rep,1947-03-12,74,70s
+Jared F. Golden,M,House,Dem,1982-07-25,38,30s
+Fred Keller,M,House,Rep,1965-10-23,55,50s
+Dan Bishop,M,House,Rep,1964-07-01,57,50s
+Gregory F. Murphy,M,House,Rep,1963-03-05,58,50s
+Kweisi Mfume,M,House,Dem,1948-10-24,72,70s
+Thomas P. Tiffany,M,House,Rep,1957-12-30,63,60s
+Mike Garcia,M,House,Rep,1976-04-24,45,40s
+Chris Jacobs,M,House,Rep,1966-11-28,54,50s
+Mark Kelly,M,Senate,Dem,1964-02-21,57,50s
+Cynthia M. Lummis,F,Senate,Rep,1954-09-10,66,60s
+Darrell Issa,M,House,Rep,1953-11-01,67,60s
+Pete Sessions,M,House,Rep,1955-03-22,66,60s
+David G. Valadao,M,House,Rep,1977-04-14,44,40s
+Tommy Tuberville,M,Senate,Rep,1954-09-18,66,60s
+John W. Hickenlooper,M,Senate,Dem,1952-02-07,69,60s
+Bill Hagerty,M,Senate,Rep,1959-08-14,61,60s
+Jerry L. Carl,M,House,Rep,1958-06-17,63,60s
+Barry Moore,M,House,Rep,1966-09-26,54,50s
+Jay Obernolte,M,House,Rep,1970-08-18,50,50s
+Young Kim,F,House,Rep,1962-10-18,58,50s
+Michelle Steel,F,House,Rep,1955-06-21,66,60s
+Sara Jacobs,F,House,Dem,1989-02-01,32,30s
+Lauren Boebert,F,House,Rep,1986-12-15,34,30s
+Kat Cammack,F,House,Rep,1988-02-16,33,30s
+C. Scott Franklin,M,House,Rep,1964-08-23,56,50s
+Byron Donalds,M,House,Rep,1978-10-28,42,40s
+Carlos A. Gimenez,M,House,Rep,1954-01-17,67,60s
+Maria Elvira Salazar,M,House,Rep,1961-11-01,59,50s
+Nikema Williams,F,House,Dem,1978-07-30,42,40s
+Carolyn Bourdeaux,F,House,Dem,1970-06-03,51,50s
+Andrew S. Clyde,M,House,Rep,1963-11-22,57,50s
+Marjorie Taylor Greene,F,House,Rep,1974-05-27,47,40s
+Kaiali’i Kahele,M,House,Dem,1974-03-28,47,40s
+Ashley Hinson,F,House,Rep,1983-06-27,38,30s
+Mariannette Miller-Meeks,F,House,Rep,1955-09-06,65,60s
+Randy Feenstra,M,House,Rep,1969-01-14,52,50s
+Marie Newman,F,House,Dem,1964-04-13,57,50s
+Mary E. Miller,F,House,Rep,1959-08-27,61,60s
+Frank J. Mrvan,M,House,Dem,1969-04-16,52,50s
+Victoria Spartz,F,House,Rep,1978-10-06,42,40s
+Tracey Mann,M,House,Rep,1976-12-17,44,40s
+Jake LaTurner,M,House,Rep,1988-02-17,33,30s
+Jake Auchincloss,M,House,Dem,1988-01-29,33,30s
+Peter Meijer,M,House,Rep,1988-01-10,33,30s
+Lisa C. McClain,F,House,Rep,1966-04-07,55,50s
+Michelle Fischbach,F,House,Rep,1965-11-03,55,50s
+Cori Bush,F,House,Dem,1976-07-21,44,40s
+Matthew M. Rosendale,M,House,Rep,1960-07-07,60,60s
+Deborah K. Ross,F,House,Dem,1963-06-20,58,50s
+Kathy E. Manning,F,House,Dem,1956-12-03,64,60s
+Madison Cawthorn,M,House,Rep,1995-08-01,25,20s
+Yvette Herrell,F,House,Rep,1964-03-16,57,50s
+Teresa Leger Fernandez,F,House,Dem,1959-07-01,62,60s
+Andrew R. Garbarino,M,House,Rep,1984-09-27,36,30s
+Nicole Malliotakis,F,House,Rep,1980-11-11,40,40s
+Ritchie Torres,M,House,Dem,1988-03-12,33,30s
+Jamaal Bowman,M,House,Dem,1976-04-01,45,40s
+Mondaire Jones,M,House,Dem,1987-05-18,34,30s
+Stephanie I. Bice,F,House,Rep,1973-11-11,47,40s
+Cliff Bentz,M,House,Rep,1952-01-12,69,60s
+Nancy Mace,F,House,Rep,1977-12-04,43,40s
+Diana Harshbarger,F,House,Rep,1960-01-01,61,60s
+Pat Fallon,M,House,Rep,1967-12-19,53,50s
+August Pfluger,M,House,Rep,1978-12-28,42,40s
+Ronny Jackson,M,House,Rep,1967-05-04,54,50s
+Troy E. Nehls,M,House,Rep,1968-04-07,53,50s
+Tony Gonzales,M,House,Rep,1980-10-10,40,40s
+Beth Van Duyne,F,House,Rep,1970-11-16,50,50s
+Blake D. Moore,M,House,Rep,1980-06-22,41,40s
+Burgess Owens,M,House,Rep,1951-08-02,69,60s
+Bob Good,M,House,Rep,1965-09-11,55,50s
+Marilyn Strickland,F,House,Dem,1962-09-25,58,50s
+Scott Fitzgerald,M,House,Rep,1963-11-16,57,50s
+Alex Padilla,M,Senate,Dem,1973-03-22,48,40s
+Jon Ossoff,M,Senate,Dem,1987-02-16,34,30s
+Raphael G. Warnock,M,Senate,Dem,1969-07-23,51,50s
+Claudia Tenney,F,House,Rep,1961-02-04,60,60s
+Julia Letlow,F,House,Rep,1981-03-16,40,40s
+Troy A. Carter,M,House,Dem,1963-10-26,57,50s
+NA,F,House,Dem,1979-01-31,42,40s
