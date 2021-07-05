@@ -12,6 +12,8 @@ following or update to the latest version in advance.
 
 **RColorBrewer** (1.1-2)
 
+**scales** (1.1.1)
+
 **tidyverse** (1.3.0)
 
 **vcd** (1.4-8)
