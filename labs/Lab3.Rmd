@@ -1,0 +1,30 @@
+---
+title: "Graphing Multivariate Categorical Data Lab"
+date: "7/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Congress
+
+This dataset contains information about the members of the U.S. Congress: both in the Senate (`type==Senate`) and House of Representatives (`type==House`). 
+
+Original data source: `legislators-current.csv`   https://github.com/unitedstates/congress-legislators
+
+Data processing script: https://github.com/jtr13/graphcat/blob/main/R/read_congress.R
+
+```{r}
+congress <- readr::read_csv("https://raw.githubusercontent.com/jtr13/graphcat/main/data/congress.csv")
+```
+
+Explore relationships among `gender`, `party`, `type` (House or Senate) and `age` (in decades: `20s` through `80s`)
+
+Start small, that is, one variable at a time, and build up to using three or all four variables. 
+
+Think about the order of the variables, the direction of the cuts, and the order of factor levels.
+
+Remember, the dependent variable should be the last cut and it should be horizontal.
+
