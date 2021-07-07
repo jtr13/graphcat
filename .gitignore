@@ -5,3 +5,5 @@
 *.Rproj
 *cache*
 slides/mosaic_slides_files/figure-slidy/
+.DS_Store
+*/.DS_Store
