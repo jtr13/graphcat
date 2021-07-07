@@ -33,9 +33,8 @@ Remember, the dependent variable should be the last cut and it should be horizon
 # Birth Data
 
 1. Load the birth_data.csv file 
-2. Run the data cleaning code 
-3. Make an alluvial diagram that will give you the mother's weight quartile pre-pregnancy as the first state and the mother's weight gain quartile at pregnancy
-4. Pick a color scheme 
+2. Make an alluvial diagram 
+3. Pick a color scheme 
 
 Variables
 `user_id`: randomly generated user id        
