@@ -4,4 +4,4 @@
 .Ruserdata
 *.Rproj
 *cache*
-*/figure_slidy/
+slides/*/figure_slidy/
