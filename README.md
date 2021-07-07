@@ -11,7 +11,7 @@ Minute 0-5 Welcome
 
 Minute 5-45 Mosaic plots with codealong (Joyce)
 
-     [slides/mosaic_slides.Rmd](slides/Mosaic_slides.Rmd)
+[slides/mosaic_slides.Rmd](slides/Mosaic_slides.Rmd)
      slides/mosaic_slides.pdf
      
      labs/mosaic_codealong.R
