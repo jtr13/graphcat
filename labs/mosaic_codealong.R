@@ -47,7 +47,8 @@ head(df)
 
 # START SMALL
 
-vcd::mosaic(~Age, data = df)
+vcd::mosaic(~Weight, data = df)
+
 vcd::mosaic(~Age, direction = "v", data = df)
 
 # Two variables
@@ -65,9 +66,9 @@ vcd::mosaic(Weight~Age, data = df, direction = c("v", "h"),
 
 # Add fill color
 
-mycolors <- RColorBrewer::brewer.pal(length(levels(df$Weight)), "Greens")
+mycolors <- RColorBrewer::brewer.pal(4, "Greens")
 
-vcd::mosaic(Weight~Age, data = df,
+vcd::mosaic(Weight~Age , data = df,
             direction = c("v", "h"),
             rot_labels = c(0, 0, 0, 0), # top, right, bottom, left
             highlighting_fill = mycolors)
@@ -101,8 +102,8 @@ vcd::mosaic(Weight~Age, data = df, direction = c("v", "h"),
 # THREE VARIABLES
 
 #+ fig.width = 14
-vcd::mosaic(Gain~Weight+Age, data = df,
-            direction = c("v", "v", "h"),
+vcd::mosaic(Age~Gain+Weight, data = df,
+          #  direction = c("v", "v", "h"),
             rot_labels = c(0,0,0,0),
             gp_labels = grid::gpar(fontsize = 8),
             spacing = vcd::spacing_dimequal(c(.3, 0, 0)),
@@ -123,7 +124,7 @@ vcd::mosaic(dftab,
        highlighting = "Gain",
        highlighting_fill = RColorBrewer::brewer.pal(7, "Blues"), pop=FALSE)
 labels <- ifelse(dftab > -1, NA, NA)
-labels[2,,4] <- paste(levels(factor(df$Age)), "\n years")
+labels[3,,4] <- paste(levels(factor(df$Age)), "\n years")
 vcd::labeling_cells(text = labels, margin = 0,
                     gp_text = grid::gpar(fontsize = 8))(dftab)
 
