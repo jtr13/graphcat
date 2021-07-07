@@ -12,19 +12,21 @@ Minute 0-5 Welcome
 Minute 5-45 Mosaic plots with codealong (Joyce)
 
 [slides/mosaic_slides.Rmd](slides/Mosaic_slides.Rmd)
-slides/mosaic_slides.pdf
+
+[slides/mosaic_slides.pdf](slides/mosaic_slides.pdf)
      
-     labs/mosaic_codealong.R
+[labs/mosaic_codealong.R](labs/mosaic_codealong.R)
 
 Minute 45-85 Alluvial diagrams with codealong (Ludmila)
 
-     slides/alluvial_slides.Rmd
-     slides/alluvial_slides.html
+[slides/alluvial_slides.Rmd](slides/alluvial_slides.Rmd)
+
+[slides/alluvial_slides.html](slides/alluvial_slides.html)
 
 Minute 85-90 Break
 
 Minute 90-120 Lab (breakout rooms)
 
-     labs/lab.Rmd
+[labs/lab.Rmd](labs/lab.Rmd)
 
 Minute 120-150 Discuss lab "results" / wrap up
