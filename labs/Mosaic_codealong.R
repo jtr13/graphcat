@@ -121,5 +121,6 @@ vcd::mosaic(dftab,
        highlighting_fill = RColorBrewer::brewer.pal(7, "Blues"), pop=FALSE)
 labels <- ifelse(dftab > -1, NA, NA)
 labels[2,,4] <- paste(levels(factor(df$Age)), "\n years")
-vcd::labeling_cells(text = labels,   margin = 0, gp_text = grid::gpar(fontsize = 8))(dftab)
+vcd::labeling_cells(text = labels, margin = 0,
+                    gp_text = grid::gpar(fontsize = 8))(dftab)
 
