@@ -1,0 +1,677 @@
+---
+title: "Alluvial Diagrams"
+author: "Ludmila Janda"
+date: "2021"
+output:
+  xaringan::moon_reader:
+    self_contained: true
+    css: [default, "link_color.css", hygge, metropolis-fonts]
+    chakra: libs/remark-latest.min.js
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+options(htmltools.dir.version = FALSE)
+library(tidyverse)
+library(scales)
+
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, fig.retina = 3)
+```
+
+
+```{css, echo = FALSE}
+.remark-slide-content {
+
+.tiny .remark-code { /*Change made here*/
+  font-size: 50% !important;
+}
+```
+
+# What are Alluvial Diagrams?
+```{r echo=FALSE, out.width=600}
+knitr::include_graphics("images/alluvial-fans.jpeg")
+```
+
+---
+
+# What are Alluvial Diagrams?
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}
+library(ggalluvial)
+
+sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+  select(student, unit_title, assessment, score_level) %>% 
+  mutate(score_level = factor(score_level), 
+         assessment = factor(assessment, levels = c("pre", "post"))) %>% 
+  spread(assessment, score_level) %>% 
+  ggalluvial::to_lodes_form(key = "assessment", axes = 3:4) 
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_flow(alpha = 0.5) +
+  ggalluvial::geom_stratum() +
+  scale_fill_manual("Score Level",
+                    values = c("1" = "#BFBFBF", "2" = "#55A5CC", 
+                               "3" = "#30779C", "4" = "#004C6D")) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "") +
+  facet_wrap(~unit_title, scales = "free_y") + 
+  theme_minimal() + 
+  theme(panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "grey"), 
+        axis.text.x = element_text(size = 18), 
+        axis.text.y = element_text(size = 14), 
+        strip.text.x = element_text(size = 16), 
+        legend.position = "bottom", 
+        legend.title = element_text(size = 16),
+        legend.text = element_text(size = 16))
+```
+
+
+---
+
+# When to Use Alluvial Diagrams
+
+--
+
+- When showing groups moving from one state of being to another
+
+--
+
+- When you have a reasonable number of groups and states of being
+
+
+
+---
+
+# Terminology
+
+
+- **Axes** the different states that the graph shows movement between
+
+```{r echo=FALSE, out.width=600}
+knitr::include_graphics("images/axes.png")
+```
+
+---
+
+# Terminology
+
+
+- **Stratum** the groupings at each state/axis
+
+```{r echo=FALSE, out.width=600}
+knitr::include_graphics("images/stratum.png")
+```
+
+---
+
+# Terminology
+
+- **Flow** the movement from one state/axis to another
+
+- **Alluvium** the movement across all states/axes (all flows together)
+
+- **Lode** intersection of one alluvium and one stratum
+
+```{r echo=FALSE, out.width=500}
+knitr::include_graphics("images/alluvium-flow-lode.png")
+```
+
+---
+
+# Terminology
+
+
+- **Axes** the different states that the graph shows movement between
+
+- **Stratum** the groupings at each state/axis
+
+- **Flow** the movement from one state/axis to another
+
+- **Alluvium** the movement across all states/axes (all flows together)
+
+- **Lode** intersection of one alluvium and one stratum
+
+```{r echo=FALSE, out.width=400}
+knitr::include_graphics("images/alluvium-flow-lode.png")
+```
+
+---
+
+# Raw Data
+```{r message=FALSE}
+sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+  select(student, unit_title, assessment, score_level)  
+
+head(sim_data_pre_post, 5)
+```
+
+
+---
+
+# Data Cleaning 
+
+- Reshape data to wide by axes
+```{r message=FALSE}
+sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+  dplyr::select(student, unit_title, assessment, score_level) %>% 
+  dplyr::mutate(score_level = factor(score_level), 
+         assessment = factor(assessment, levels = c("pre", "post"))) %>% 
+  tidyr::pivot_wider(names_from = assessment, values_from = score_level)  
+
+head(sim_data_pre_post, 5)
+```
+
+---
+
+# Using `to_lodes_form()`
+
+```{r}
+
+sim_data_pre_post <- 
+  sim_data_pre_post %>% 
+  ggalluvial::to_lodes_form(key = "assessment", axes = 3:4) 
+
+head(sim_data_pre_post, 5)
+```
+
+---
+
+# Plot Elements
+
+`ggalluvial::geom_flow(alpha = 0.5)` - gives you flows from one axis to the next (useful to make somewhat transparent with alpha)
+
+`geom_alluvium(aes(fill = final_outcome)` - gives you the alluvia across all the axes (useful to pick how to set the fill)
+
+`ggalluvial::geom_stratum()` - gives you the strata 
+
+---
+
+# Plot Code - Add Strata
+
+```{r eval=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,         # categorical axis var (pre or post)
+             stratum = stratum,      # categorical group var (score level)
+             alluvium = alluvium)) + # individual/unit (student)
+  ggalluvial::geom_stratum() 
+
+```
+
+---
+
+# Plot Code - Add Strata
+
+```{r echo=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,         
+             stratum = stratum,      
+             alluvium = alluvium)) +  
+  ggalluvial::geom_stratum() 
+
+```
+
+---
+
+# Plot Code - Add Flows
+
+```{r eval=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,             
+             stratum = stratum,          
+             alluvium = alluvium)) +     
+  ggalluvial::geom_stratum() +
+  ggalluvial::geom_flow(alpha = 0.5) 
+
+```
+
+---
+
+
+# Plot Code - Add Flows
+
+```{r echo=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,              
+             stratum = stratum,           
+             alluvium = alluvium)) +      
+  ggalluvial::geom_flow(alpha = 0.5) +
+  ggalluvial::geom_stratum() 
+
+```
+
+---
+
+# Plot Code - Add fill
+
+```{r eval=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,              
+             stratum = stratum,  
+             alluvium = alluvium,         
+             fill = stratum)) +  
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) 
+
+```
+
+---
+
+# Plot Code - Add fill
+
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,              
+             stratum = stratum,  
+             alluvium = alluvium,         
+             fill = stratum)) + 
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) 
+
+```
+
+---
+
+# Plot Code - Reverse Stratum 
+
+```{r eval=FALSE}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,              
+             stratum = fct_rev(stratum),  
+             alluvium = alluvium,         
+             fill = fct_rev(stratum))) +  
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) 
+
+```
+
+---
+
+# Plot Code - Reverse Stratum 
+
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}  
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment,              
+             stratum = fct_rev(stratum),  
+             alluvium = alluvium,         
+             fill = fct_rev(stratum))) +  
+  ggalluvial::geom_stratum() +
+  ggalluvial::geom_flow(alpha = 0.5) 
+
+```
+
+---
+
+# Plot - Facet Wrap
+```{r eval=FALSE}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") 
+```
+
+---
+
+# Plot - Facet Wrap
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") 
+```
+
+---
+
+# Plot - Add colors 
+```{r eval=FALSE}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") +
+  scale_fill_manual("Score Level",
+                    values = c("1" = "#BFBFBF", "2" = "#55A5CC", 
+                               "3" = "#30779C", "4" = "#004C6D")) 
+```
+
+---
+
+# Plot - Add colors 
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") +
+  scale_fill_manual("Score Level",
+                    values = c("1" = "#BFBFBF", "2" = "#55A5CC", 
+                               "3" = "#30779C", "4" = "#004C6D")) 
+```
+
+---
+
+# Plot - Beautify
+```{r eval=FALSE}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") + 
+  scale_fill_manual("Score Level",
+                    values = c("1" = "#BFBFBF", "2" = "#55A5CC", 
+                               "3" = "#30779C", "4" = "#004C6D")) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "") +
+  theme_minimal() + 
+  theme(panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "grey"), 
+        axis.text.x = element_text(size = 18), 
+        axis.text.y = element_text(size = 14), 
+        strip.text.x = element_text(size = 16), 
+        legend.position = "bottom", 
+        legend.title = element_text(size = 16),
+        legend.text = element_text(size = 16))
+```
+
+---
+
+# Plot - Beautify
+```{r echo=FALSE, fig.width=12, fig.asp=0.618}
+library(ggalluvial)
+
+sim_data_pre_post %>% 
+  ggplot(aes(x = assessment, 
+             stratum = fct_rev(stratum), 
+             alluvium = alluvium,
+             fill = fct_rev(stratum), 
+             label = fct_rev(stratum))) +
+  ggalluvial::geom_stratum() + 
+  ggalluvial::geom_flow(alpha = 0.5) + 
+  facet_wrap(~unit_title, scales = "free_y") + 
+  scale_fill_manual("Score Level",
+                    values = c("1" = "#BFBFBF", "2" = "#55A5CC", 
+                               "3" = "#30779C", "4" = "#004C6D")) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "") +
+  theme_minimal() + 
+  theme(panel.border = element_blank(), 
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(), 
+        axis.line = element_line(colour = "grey"), 
+        axis.text.x = element_text(size = 18), 
+        axis.text.y = element_text(size = 14), 
+        strip.text.x = element_text(size = 16), 
+        legend.position = "bottom", 
+        legend.title = element_text(size = 16),
+        legend.text = element_text(size = 16))
+```
+
+---
+
+# Plot with `geom_alluvium()` 
+```{r ggalluvial2, echo=FALSE, fig.width=14, fig.height=8.5}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+job_outcomes %>% 
+  mutate(final_outcome = dplyr::coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
+  ggalluvial::to_lodes_form(key = "contact", axes = 2:5) %>% 
+  ggplot(aes(x = contact, stratum = stratum, 
+             alluvium = alluvium, label = stratum)) + 
+  ggalluvial::geom_alluvium(aes(fill = final_outcome), color = "darkgrey", na.rm = TRUE) +
+  ggalluvial::geom_stratum(na.rm = TRUE) +
+  geom_text(stat = "stratum", na.rm = TRUE, size = 5) + 
+  theme_minimal() + 
+  theme(text = element_text(size = 20), 
+        legend.position = "bottom") +
+  labs(x = "", fill = "Final Outcome", 
+       caption = "David Neuzerling @mdneuzerling") + 
+  scale_fill_manual(values = c("ghosted" = "#F0E442", "no role" = "#CC79A7",
+                               "withdrew" = "#0072B2", "rejected" = "#D55E00",
+                               "offer" = "#009E73")) 
+```
+
+.tiny[
+Source: https://mdneuzerling.com/post/my-data-science-job-hunt/
+]
+
+---
+
+# Raw Data 
+```{r eval=TRUE}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+head(job_outcomes, 10)
+```
+
+---
+
+# Data Cleaning 
+
+```{r eval=TRUE}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+job_outcomes %>% 
+  mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
+  head(10)
+```
+
+---
+
+# Plot with `geom_alluvium()`
+```{r eval=FALSE}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+job_outcomes %>% 
+  mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
+  ggalluvial::to_lodes_form(key = "contact", axes = 2:5) %>% 
+  ggplot(aes(x = contact, stratum = stratum, 
+             alluvium = alluvium, label = stratum)) + 
+  ggalluvial::geom_alluvium(aes(fill = final_outcome), 
+                            color = "darkgrey", na.rm = TRUE) +
+  ggalluvial::geom_stratum(na.rm = TRUE) +
+  geom_text(stat = "stratum", na.rm = TRUE, size = 5) + 
+  theme_minimal() + 
+  theme(text = element_text(size = 20), 
+        legend.position = "bottom") +
+  labs(x = "", fill = "Final Outcome", 
+       caption = "David Neuzerling @mdneuzerling") + 
+  scale_fill_manual(values = c("ghosted" = "#F0E442", 
+                               "no role" = "#CC79A7",
+                               "withdrew" = "#0072B2", 
+                               "rejected" = "#D55E00",
+                               "offer" = "#009E73")) 
+```
+
+---
+
+# Plot with `geom_alluvium()`
+```{r echo=FALSE, fig.width=14, fig.height=9.5}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+job_outcomes %>% 
+  mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
+  ggalluvial::to_lodes_form(key = "contact", axes = 2:5) %>% 
+  ggplot(aes(x = contact, stratum = stratum, 
+             alluvium = alluvium, label = stratum)) + 
+  ggalluvial::geom_alluvium(aes(fill = final_outcome), 
+                            color = "darkgrey", na.rm = TRUE) +
+  ggalluvial::geom_stratum(na.rm = TRUE) +
+  geom_text(stat = "stratum", na.rm = TRUE, size = 5) + 
+  theme_minimal() + 
+  theme(text = element_text(size = 20), 
+        legend.position = "bottom") +
+  labs(x = "", fill = "Final Outcome", 
+       caption = "David Neuzerling @mdneuzerling") + 
+  scale_fill_manual(values = c("ghosted" = "#F0E442", 
+                               "no role" = "#CC79A7",
+                               "withdrew" = "#0072B2", 
+                               "rejected" = "#D55E00",
+                               "offer" = "#009E73")) 
+```
+
+---
+
+# Contrast with `geom_flow()`
+```{r echo=FALSE, fig.width=14, fig.height=9.5}
+job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+
+job_outcomes %>% 
+  mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
+  ggalluvial::to_lodes_form(key = "contact", axes = 2:5) %>% 
+  ggplot(aes(x = contact, stratum = stratum, 
+             alluvium = alluvium, label = stratum, fill = stratum)) + 
+  ggalluvial::geom_flow(color = "darkgrey", na.rm = TRUE) +
+  ggalluvial::geom_stratum(na.rm = TRUE) +
+  geom_text(stat = "stratum", na.rm = TRUE, size = 5) + 
+  theme_minimal() + 
+  theme(text = element_text(size = 20), 
+        legend.position = "bottom") +
+  labs(x = "", fill = "")
+```
+
+---
+
+# Examples
+
+```{r echo=FALSE, out.width=700}
+knitr::include_graphics("images/ex-mayoral-race.png")
+```
+
+.tiny[
+Source: https://www.nytimes.com/interactive/2021/06/22/us/elections/results-nyc-mayor-primary.html
+]
+
+
+---
+
+# Examples
+
+```{r echo=FALSE, out.width=500}
+knitr::include_graphics("images/ex-economist-immigration.png")
+```
+
+.tiny[
+Source: http://www.economist.com/blogs/graphicdetail/2015/05/daily-chart-1?fsrc=scn/tw/te/bl/ed/seeking_safety&%3Ffsrc%3Dscn/=tw/dc
+]
+
+---
+
+# Examples
+
+- Better as a mosaic?
+
+```{r echo=FALSE, out.width=600}
+knitr::include_graphics("images/ex-titanic.png")
+```
+.tiny[
+Source: https://cran.r-project.org/web/packages/ggalluvial/vignettes/ggalluvial.html
+]
+
+---
+
+# Examples
+
+- Including gender in this graph gives us very little information
+
+```{r echo=FALSE, out.width=600}
+knitr::include_graphics("images/ex-cancers.png")
+```
+
+.tiny[
+Source: https://digitalsplashmedia.com/2014/06/visualizing-categorical-data-as-flows-with-alluvial-diagrams/
+]
+
+---
+
+# Examples
+
+- Way too much going on here! 
+
+```{r echo=FALSE, out.width=400}
+knitr::include_graphics("images/ex-energy.png")
+```
+
+.tiny[
+Source: https://digitalsplashmedia.com/2014/06/visualizing-categorical-data-as-flows-with-alluvial-diagrams/
+]
+
+---
+
+# In Summary 
+
+- Ensure that your data fits the alluvial specifications
+
+--
+
+- Reshape the data to wide by axes if needed for `to_lodes_form()`
+
+--
+
+- Consider whether you want to highlight flows or alluvium
+
+--
+
+- Pay attention to your use of color (both in terms of variable type and whether your are coloring from starting state or ending state)
+
+--
+
+- HAVE FUN!
+
+---
+
+# Resources
+
+ggalluvial CRAN vignette:
+  https://cran.r-project.org/web/packages/ggalluvial/vignettes/ggalluvial.html
+
+defining and taxonomizing alluvial diagrams:
+  https://corybrunson.github.io/2019/09/13/flow-taxonomy/
+  
+Alternative way to make alluvial charts: 
+  https://ggforce.data-imaginist.com/reference/geom_parallel_sets.html
+
