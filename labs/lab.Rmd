@@ -38,8 +38,8 @@ Remember, the dependent variable should be the last cut and it should be horizon
 
 Variables
 `user_id`: randomly generated user id        
-`pre_weight`: weight of mother befofe pregnancy      
-`pre_weight_cat`: weight of mother befofe pregnancy split into quartiles  
+`pre_weight`: weight of mother before pregnancy      
+`pre_weight_cat`: weight of mother before pregnancy split into quartiles  
 `weight_gain`: weight gain of mother during pregnancy        
 `weight_gain_cat`: weight gain of mother during pregnancy split into quartiles   
 `mother_age`: mother's age at start of pregnancy
