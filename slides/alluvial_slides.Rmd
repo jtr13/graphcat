@@ -43,7 +43,7 @@ knitr::include_graphics("images/alluvial-fans.jpeg")
 ```{r echo=FALSE, fig.width=12, fig.asp=0.618}
 library(ggalluvial)
 
-sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+sim_data_pre_post <- read_csv(here::here("data/sim_data_pre_post.csv")) %>% 
   select(student, unit_title, assessment, score_level) %>% 
   mutate(score_level = factor(score_level), 
          assessment = factor(assessment, levels = c("pre", "post"))) %>% 
@@ -151,7 +151,7 @@ knitr::include_graphics("images/alluvium-flow-lode.png")
 
 # Raw Data
 ```{r message=FALSE}
-sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+sim_data_pre_post <- read_csv(here::here("data/sim_data_pre_post.csv")) %>% 
   select(student, unit_title, assessment, score_level)  
 
 head(sim_data_pre_post, 5)
@@ -164,7 +164,7 @@ head(sim_data_pre_post, 5)
 
 - Reshape data to wide by axes
 ```{r message=FALSE}
-sim_data_pre_post <- read_csv(here::here("sim_data_pre_post.csv")) %>% 
+sim_data_pre_post <- read_csv(here::here("data/sim_data_pre_post.csv")) %>% 
   dplyr::select(student, unit_title, assessment, score_level) %>% 
   dplyr::mutate(score_level = factor(score_level), 
          assessment = factor(assessment, levels = c("pre", "post"))) %>% 
@@ -455,7 +455,7 @@ sim_data_pre_post %>%
 
 # Plot with `geom_alluvium()` 
 ```{r ggalluvial2, echo=FALSE, fig.width=14, fig.height=8.5}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 job_outcomes %>% 
   mutate(final_outcome = dplyr::coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
@@ -483,7 +483,7 @@ Source: https://mdneuzerling.com/post/my-data-science-job-hunt/
 
 # Raw Data 
 ```{r eval=TRUE}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 head(job_outcomes, 10)
 ```
@@ -493,7 +493,7 @@ head(job_outcomes, 10)
 # Data Cleaning 
 
 ```{r eval=TRUE}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 job_outcomes %>% 
   mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
@@ -504,7 +504,7 @@ job_outcomes %>%
 
 # Plot with `geom_alluvium()`
 ```{r eval=FALSE}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 job_outcomes %>% 
   mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
@@ -531,7 +531,7 @@ job_outcomes %>%
 
 # Plot with `geom_alluvium()`
 ```{r echo=FALSE, fig.width=14, fig.height=9.5}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 job_outcomes %>% 
   mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
@@ -558,7 +558,7 @@ job_outcomes %>%
 
 # Contrast with `geom_flow()`
 ```{r echo=FALSE, fig.width=14, fig.height=9.5}
-job_outcomes <- read_csv(here::here("job_outcomes.csv"))
+job_outcomes <- read_csv(here::here("data/job_outcomes.csv"))
 
 job_outcomes %>% 
   mutate(final_outcome = coalesce(outcome, `2nd stage`, `1st stage`)) %>% 
