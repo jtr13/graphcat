@@ -39,17 +39,28 @@ Materials: https://github.com/jtr13/graphcat
 
 # Graphing multivariate categorical data
 
-**mosaic plot** "area proportional visualization of a (possibly higher-dimensional) table of expected frequencies" (`?vcd::mosaic`)
+**mosaic plot** space-filling visualization in which the area of each small rectangle is proportional to the frequency count for a unique combination of levels of the categorical variables displayed
 
 ```{r, fig.width=10, fig.height=4}
 load("../data/age_preweight_gain.rda")
+library(vcd)
 mosaic(Gain~Age+Weight, data = df, direction = c("v", "v", "h"),
        spacing = vcd::spacing_dimequal(c(.3, 0, 0)),
        highlighting_fill = RColorBrewer::brewer.pal(7, "Blues"),
        labels = FALSE, varnames = TRUE)
 ```
 
-each small rectangle is proportional to the frequency count for a unique combination of levels of the categorical variables displayed
+# Graphing multivariate categorical data
+
+**mosaic plot** space-filling visualization in which the area of each small rectangle is proportional to the frequency count for a unique combination of levels of the categorical variables displayed
+
+```{r, fig.width=10, fig.height=4}
+mosaic(Gain~Age+Weight, data = df, direction = c("v", "v", "h"),
+       spacing = vcd::spacing_dimequal(c(.3, 0, 0)),
+       highlighting_fill = RColorBrewer::brewer.pal(7, "Blues"),
+       labels = FALSE, varnames = TRUE)
+```
+
 
 `Age`: 7 levels, `Weight`: 4 levels, `Gain`: 7 levels  
 

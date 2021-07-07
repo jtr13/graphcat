@@ -1,0 +1,22 @@
+body { font-family: 'Source Sans Pro', sans-serif; }
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: underline;
+}
+
+figcaption {
+  font-size: 70%;
+}
+
+pre, code{
+  background-color: #f2f2f2;
+  font-family: "Andale Mono";
+}
+
+/* allow R chunks to render in a large font */
+pre.sourceCode, code.sourceCode, code {
+  font-size: 90%;
+}
