@@ -32,7 +32,10 @@ df <- df %>%
                                            "30-40" = "30",
                                            "40-50" = "40",
                                            "50-60" = "50")) %>%
-  dplyr::select(Age, Weight, Gain, Freq)
+  dplyr::select(Age, Weight, Gain, Freq) %>%
+  dplyr::group_by(Age, Weight, Gain) %>%
+  dplyr::summarize(Freq = sum(Freq)) %>%
+  dplyr::ungroup()
 
 
 
