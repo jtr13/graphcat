@@ -37,6 +37,7 @@ Minute 120-150 Discuss lab "results" / wrap up
 
 Materials: https://github.com/jtr13/graphcat
 
+
 # Graphing multivariate categorical data
 
 **mosaic plot** space-filling visualization in which the area of each small rectangle is proportional to the frequency count for a unique combination of levels of the categorical variables displayed
@@ -233,7 +234,7 @@ expected
 
 
 ```{r}
-tidyexp <- expected %>% gather(key = "Group", value = "Freq", -Age)
+tidyexp <- expected %>% dplyr::select(-Freq) %>% gather(key = "Group", value = "Freq", -Age)
 library(vcd)
 tidyexp$Group <- fct_rev(tidyexp$Group)
 mosaic(Group ~ Age, direction = c("v", "h"), tidyexp,
@@ -491,7 +492,14 @@ Contact residents are afforded with other residents, (Low, High).
 
 -   Other variables are generally split vertically
 
+```{r, eval = FALSE, echo=TRUE}
+vcd::mosaic(Gain~Weight+Age, data = df,
+            direction = c("v", "v", "h")
+```            
+
 -   Most important *level* of dependent variable is closest to the x-axis and darkest (or most noticable shade)
 
 
 See: Antony Unwin, *Graphical Data Analysis with R*, CRC Press, 2015.
+
+next: https://github.com/jtr13/graphcat/blob/main/labs/Mosaic_codealong.R

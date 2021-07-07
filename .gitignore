@@ -2,3 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rproj
+*cache*
+slides/mosaic_slides_files/figure-slidy/
+.DS_Store
+*/.DS_Store
+slides/mosaic_slides.html
